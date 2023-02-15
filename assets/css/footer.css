@@ -1,0 +1,188 @@
+
+
+h1, h2, h3, h4, h5, h6{
+    color:#000;
+    font-weight:600;
+}
+
+a, button, input, textarea, select{
+    outline:none !important;
+}
+
+fieldset{
+    border:0;
+}
+
+.title{
+    color:#334f6c;
+}
+
+.flex, .fixed_flex{
+    display:flex;
+}
+
+.flex-content{
+    width:100%;
+    position:relative;
+}
+
+.padding_1x{
+    padding:1rem;
+}
+
+.padding_2x{
+    padding:2rem;
+}
+
+.padding_3x{
+    padding:3rem;
+}
+
+.padding_4x{
+    padding:4rem;
+}
+
+.btn{
+    padding:0.8rem 2rem;
+    border-radius:5px;
+    text-align:center;
+    font-weight:500;
+    text-transform:uppercase;
+}
+
+.btn_1{
+    border:1px solid #334f6c;
+    background-color:#334f6c;
+    color:#fff;
+}
+
+.btn_1:hover{
+    background-color:transparent;
+    color:#fff;
+}
+
+.btn_2{
+    border:1px solid #334f6c;
+    background-color:orange;
+    color:#fff;
+}
+
+.btn_2:hover{
+    border:1px solid #334f6c;
+    background-color:#334f6c;
+    color:#fff;
+}
+
+@media (max-width:920px){
+    .flex{
+        flex-wrap:wrap;
+    }
+    
+    .padding_1x, .padding_2x, .padding_3x, .padding_4x{
+        padding:1rem;
+    }
+  
+    .btn{
+        padding:0.5rem 1rem;
+    }
+    
+    a, p{
+        font-size:12px;
+    }
+}
+
+
+
+/***************************
+               FOOTER
+****************************/
+footer{
+    background-color:#334f6c;
+    color:#fff;
+}
+
+footer h3{
+    color:#fff;
+    margin-bottom:1.5rem;
+}
+
+footer a{
+    color:#fff;
+    display:block;
+    margin:15px 0;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+footer fieldset{
+    padding:0;
+}
+
+footer fieldset input{
+    background-color:#334f6c;
+    border:0;
+    color:#334f6c;
+    padding:1rem;
+}
+
+footer fieldset .btn{
+    border-radius:0;
+    border:0;
+}
+
+footer fieldset .btn_2:hover{
+    background-color:#334f6c;
+    border:0;
+    color:#fff;
+}
+
+footer .flex:last-child{
+    align-items:center;
+}
+
+footer .flex:last-child .flex-content:last-child{
+    text-align:right;
+}
+
+footer .flex:last-child p{
+    color:#fff;
+}
+
+footer .flex:last-child a{
+    width:40px;
+    display:inline-block;
+    background-color:#334f6c;
+    color:#fff;
+    padding:0.5rem;
+    margin-right:3px;
+    text-align:center;
+}
+
+footer .flex:last-child a:hover{
+    background-color:#334f6c;
+    color:gray;
+}
+
+@media (max-width:1100px){
+    footer .flex:first-child{
+        flex-wrap:wrap;
+    }
+    
+    footer .flex:first-child .flex-content{
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width:920px){
+    footer .flex:last-child .flex-content:last-child{
+        text-align:left;
+    }
+}
+
+@media (max-width:320px){
+    footer .flex:first-child .flex-content{
+        flex:1 1 100%;
+    }
+}

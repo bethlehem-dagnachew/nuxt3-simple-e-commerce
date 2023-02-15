@@ -1,0 +1,244 @@
+p {
+	font-size: 12px;
+	color: #111111;
+}
+#welcome_message {
+	width: 100%;
+	font-size: 10px;
+	padding: 12px;
+	background-color: rgba(104, 137, 154, 0.25);
+	color: #868f93;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+header {
+	width: 100%;
+	max-width: 1148px;
+	height: 100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header_language {
+	width: 162px;
+	max-width: 162px;
+	display: flex;
+	align-items: center;
+}
+.header_language p {
+	margin-left: 10px;
+}
+#menu {
+	width: 100%;
+	height: 70px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+#menu .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1148px;
+	margin: 0 auto;
+}
+.menu_drawer {
+	height: 70px;
+	flex-grow: 1;
+	max-width: 162px;
+	display: flex;
+	align-items: center;
+}
+.menu_links {
+	height: 70px;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu_links ul {
+	display: flex;
+}
+.menu_links ul li {
+	list-style: none;
+	font-size: 12px;
+	color: #111111;
+	padding: 27px;
+	text-transform: uppercase;
+}
+.menu_icons {
+	height: 70px;
+	flex-grow: 1;
+	max-width: 162px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+.btn {
+	width: fit-content;
+	font-size: 12px;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.btn_primary {
+	background-color: #111111;
+	color: #ffffff;
+	padding: 20px 60px;
+}
+.btn_outline {
+	border: 2px solid #ded3aa;
+	padding: 16px 48px;
+}
+.btn_outline_secondary {
+	border: 1px solid #e1e1e1;
+	padding: 20px 40px;
+	margin-left: 20px;
+}
+.btn_outline:hover {
+	background-color: #f5f5f5;
+}
+#product {
+	width: 1148px;
+	margin: 0 auto;
+	margin-top: 48px;
+	display: flex;
+}
+.product_images {
+	width: 657px;
+	min-width: 657px;
+	height: 683px;
+	background-color: #e1e1e1;
+	background: url("@/assets/images/product2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.product_details {
+	flex-grow: 1;
+	padding-left: 28px;
+}
+.product_details h4 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #111111;
+}
+.product_details p {
+	font-size: 14px;
+	color: #555555;
+	font-weight: 300;
+	margin-top: 35px;
+	margin-bottom: 30px;
+	line-height: 24px;
+}
+.product_details ul {
+	margin-bottom: 40px;
+}
+.product_details ul li {
+	font-size: 14px;
+	color: #555555;
+	font-weight: 300;
+	line-height: 24px;
+	margin-left: 14px;
+	list-style: none;
+}
+.product_details ul li::before {
+	content: "\2022";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #cccccc;
+	/* Change the color */
+	display: inline-block;
+	/* Needed to add space between the bullet and the text */
+	width: 1em;
+	/* Also needed for space (tweak if needed) */
+	margin-left: -1em;
+	/* Also needed for space (tweak if needed) */
+}
+.cta {
+	display: flex;
+	width: 100%;
+	margin: 40px 0;
+}
+footer {
+	width: 100%;
+	height: 70px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid #e1e1e1;
+	margin-top: 100px;
+	font-size: 13px;
+	color: #b5b5b5;
+	text-align: center;
+}
+footer p {
+	font-size: 13px;
+	color: #b5b5b5;
+	text-align: center;
+}
+.material-symbols-outlined {
+	color: #111111;
+	font-size: 22px;
+	cursor: pointer;
+}
+.vert_devider {
+	width: 0.75px;
+	height: 28px;
+	background-color: #e1e1e1;
+	margin: 16px;
+}
+a {
+	color: #111111;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+h6 {
+	font-size: 13px;
+	color: #555555;
+	font-weight: 300;
+}
+.back {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	margin-left: -8px;
+}
+.back a {
+	font-size: 13px;
+	color: #68899a;
+	font-weight: 300;
+	text-transform: capitalize;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #111111;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #68899a;
+}
+.about {
+	margin-top: 30px;
+}
+.about p {
+	font-size: 14px;
+	margin: 0;
+	color: #111111;
+	font-weight: 500;
+}
+.about span {
+	font-size: 14px;
+	margin: 0;
+	color: #68899a;
+	font-weight: 500;
+}
+.cta .material-symbols-outlined {
+	margin-right: 6px;
+}

@@ -1,0 +1,263 @@
+
+h2 {
+    font-size: 36px;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  li .breadcrumb-item{
+    color: #3296bb;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 1;
+  }
+  
+  
+  
+  .breadcrumb-section {
+    background-color: #ffff;
+    width: 100%;
+  }
+  .breadcrumb-section .page-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .breadcrumb-section .page-title h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+  .breadcrumb-section .breadcrumb {
+    background-color: transparent;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #555555;
+    font-weight: 600;
+    margin: 0;
+    padding-right: 0;
+  }
+
+.new-product{
+    position: absolute;
+      color: #fff;
+      background-color: #3296bb;
+      font-size: 20px;
+      padding: 1px 10px;
+      border-radius: 0px;
+      right: 0px;
+    width: 60px;
+  
+  }
+.gs-product-grid-view-outer-container{
+    background-color: #fff;
+    width: 100%;
+    font-family: 'Poppins';
+    margin-bottom: 5%;
+}
+
+.gs-product-grid-view-container{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 320px)  { .gs-product-grid-view-container .gs-product-grid-grid-div{grid-template-columns: repeat(2, 1fr);} }
+@media only screen and (min-width: 540px)  { .gs-product-grid-view-container .gs-product-grid-grid-div{grid-template-columns: repeat(3, 1fr);} }
+@media only screen and (min-width: 800px)  { .gs-product-grid-view-container .gs-product-grid-grid-div{grid-template-columns: repeat(4, 1fr);} }
+@media only screen and (min-width: 1024px) { .gs-product-grid-view-container .gs-product-grid-grid-div{grid-template-columns: repeat(5, 1fr);} }
+@media only screen and (min-width: 1900px) { .gs-product-grid-view-container .gs-product-grid-grid-div{grid-template-columns: repeat(6, 1fr);} }
+@media screen and (min-device-width: 1200px)  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .gs-product-grid-view-container .gs-product-grid-grid-div{
+        grid-template-columns: repeat(6, 1fr);}
+        
+      
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .gs-product-card-image{
+        width: 100%;
+        height: 10%;
+        object-fit: cover;
+    }
+    .gs-product-grid-view-container .gs-product-grid-grid-div{grid-template-columns: repeat(6, 1fr);}
+   
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card:hover{
+    transform: scale(1.03);
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content{
+    padding: 10px;
+    position: relative;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-image-container{
+    width: 100%;
+    height: 160px ;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: -20px;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-image-container .gs-product-card-image{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-name{
+    padding: 0px 0px 1px 0px;
+    font-size: 11px;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-detail{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 320px)  { .gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-detail { display: block;} }
+@media only screen and (min-width: 540px)  { .gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-detail { display: block;} }
+@media only screen and (min-width: 800px)  { .gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-detail { display: flex;} }
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-detail .gs-product-card-detail-title{
+    color: #9da1aa;
+    min-width: 50%;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-detail .gs-product-card-detail-value{
+    color: black;
+    min-width: 50%;
+    text-align: left;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-product-type{
+    position: absolute;
+    top: calc(25px + 2px);
+    left: calc(5px + 2px);
+    padding: 3px 5px;
+    background-color:#fff;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #3296bb;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-product-type:hover{
+    background-color: gray;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-save{
+    position: absolute;
+    top: calc(10px + 2px);
+    right: calc(10px + 2px);
+    padding: 0px 5px;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-save svg{
+    fill: var(--product-overlay-background-color-gs-product-grid-view);
+    stroke: white;
+    stroke-width: 0.5px;
+    stroke-linejoin: round;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-save:hover svg{
+    fill: gray;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-save.gs-saved svg{
+    fill: var(--product-card-color-gs-product-grid-view);
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card .gs-product-card-content .gs-product-card-save.gs-saved:hover svg{
+    fill: #ffff;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 5px;
+}
+
+.gs-product-grid-view-container .gs-product-grid-grid-div .gs-product-card::-webkit-scrollbar-thumb {
+    background: #0a0f18;
+    border-radius: 5px;
+}
+
+.new_arr {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(49, 49, 49);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .new_arr-home {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0%;
+    color: rgb(49, 49, 49);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+      margin-bottom: 4%;
+  }
+  .arrival {
+    color: #3296bb;
+  }
+  .category-page{
+    margin-top: 10px;
+  }
